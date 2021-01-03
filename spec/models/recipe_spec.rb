@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe Recipe, type: :model do
   before do
     user = FactoryBot.create(:user)
-    binding.pry
     @recipe = FactoryBot.build(:recipe, user_id: user.id)
   end
 
